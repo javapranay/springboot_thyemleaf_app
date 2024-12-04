@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: sbwebappcontainer
-          image: ashokit/sb-logger-app
+          image: javapranay/sb-thymeleaf-app
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: sbappsvc
-  namespace: ashokitns
+  namespace: pranay-ns
 spec:
   type: LoadBalancer
   selector:
