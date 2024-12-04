@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/sb-app.jar sb-app.jar
-ENTRYPOINT ["java","-jar","/sb-app.jar"]
+ADD target/sb-thymeleaf-app.jar sb-thymeleaf-app.jar
+ENTRYPOINT ["java","-jar","/sb-thymeleaf-app.jar"]
